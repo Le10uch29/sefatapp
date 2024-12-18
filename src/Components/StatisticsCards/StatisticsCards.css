@@ -1,0 +1,32 @@
+.cardsContainer {
+  display: flex;
+  padding: 20px;
+  gap: 32.95px;
+  height: 118.65px;
+  margin-bottom: 343px;
+}
+
+.statistiCard {
+  display: flex;
+  width: 220.16px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 26.37px;
+  text-align: center;
+}
+
+.iconWrapper {
+  margin-bottom: 8px;
+}
+
+.title {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin: 0;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0 0;
+}

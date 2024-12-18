@@ -1,0 +1,27 @@
+import React from "react";
+import Image from "next/image";
+import "./SearchBar.css";
+
+const SearchBar: React.FC = () => {
+  return (
+    <div className="searchBarContainer">
+      <button className="sortButton">
+        <Image src="/vector.png" alt="Sort" width={16} height={16} />
+        Sırala
+      </button>
+
+      <input
+        type="text"
+        placeholder="Ex. Doctor, Hospital"
+        className="searchInput"
+      />
+
+      <button className="searchButton">
+        <Image src="/icons/search.png" alt="Search" width={16} height={16} />
+        Axtarış
+      </button>
+    </div>
+  );
+};
+
+export default SearchBar;

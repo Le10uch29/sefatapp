@@ -1,0 +1,20 @@
+.expense-statistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 200px;
+    height: 244.34px;
+  }
+  
+  .chart-container {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .bar-chart-container {
+    width: 50%;
+  }
+  
+  .bar-chart-title {
+    margin-bottom: 10px;
+  }
