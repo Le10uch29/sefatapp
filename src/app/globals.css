@@ -24,3 +24,9 @@ body {
   margin: 0;
   align-items: flex-start;
 }
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}

@@ -51,71 +51,82 @@ const SettingCart: React.FC = () => {
 
   return (
     <div className="card">
+      <div className="card-info">
+        <h2 className="form-header-title">Profili redaktə edin</h2>
+        <span className="span-line"></span>
+      </div>
       <form onSubmit={handleSubmit} className="setting-cart-form">
-        <div className="image-container">
-          <Image
-            src={
-              formData.imageUrl ||
-              "https://via.placeholder.com/275x340?text=275x340"
-            }
-            alt="Profile"
-            width={275}
-            height={340}
-            className="image"
-          />
-          <div className="overlay">
-            <label htmlFor="imageUpload" className="img-btn">
-              Şəkili dəyiş
-            </label>
-            <input
-              id="imageUpload"
-              type="file"
-              accept="image/*"
-              style={{ display: "none" }}
-              onChange={handleImageChange}
+        <div className="form-container">
+          <div className="image-container">
+            <Image
+              src={
+                formData.imageUrl ||
+                "https://via.placeholder.com/275x340?text=275x340"
+              }
+              alt="Profile"
+              width={275}
+              height={340}
+              className="image"
             />
+            <div className="overlay">
+              <label htmlFor="imageUpload" className="img-btn">
+                <Image
+                  src={"/save-img-btn.svg"}
+                  alt="Profile-btn"
+                  width={40}
+                  height={40}
+                />
+              </label>
+              <input
+                id="imageUpload"
+                type="file"
+                accept="image/*"
+                style={{ display: "none" }}
+                onChange={handleImageChange}
+              />
+            </div>
           </div>
-        </div>
-        <div className="imputs">
-          <div className="input-control">
-            <label>Ad/Soyad</label>
-            <input
-              type="text"
-              name="Name"
-              className="input"
-              value={formData.Name}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="input-control">
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              className="input"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="input-control">
-            <label>Mobil nömrə</label>
-            <input
-              type="tel"
-              name="phoneNumber"
-              className="input"
-              value={formData.phoneNumber.toString()}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="input-control">
-            <label>Ünvan</label>
-            <input
-              type="text"
-              name="addressInput"
-              className="input"
-              value={formData.addressInput}
-              onChange={handleAddressChange}
-            />
+          <div className="inputs">
+            <div className="input-control">
+              <label className="lable-title">Ad/Soyad</label>
+              <input
+                type="text"
+                name="Name"
+                className="input"
+                value={formData.Name}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-control">
+              <label className="lable-title">Email</label>
+              <input
+                type="email"
+                name="email"
+                className="input"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-control">
+              <label className="lable-title">Mobil nömrə</label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                className="input"
+                value={formData.phoneNumber.toString()}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-control">
+              <label className="lable-title">Ünvan</label>
+              <input
+                type="text"
+                name="addressInput"
+                className="input"
+                value={formData.addressInput}
+                onChange={handleAddressChange}
+              />
+            </div>
           </div>
         </div>
         <button type="submit" className="btn">

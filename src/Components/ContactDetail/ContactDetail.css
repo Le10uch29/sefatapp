@@ -4,14 +4,14 @@
   width: 524px;
   height: 609px;
   border-radius: 16px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 34px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   background-color: #fff;
   padding: 71px 44px 62.5px;
   grid-template-columns: reapet(2, 1fr);
   grid-template-rows: reapet(2, 1fr);
   justify-content: start;
-  border-radius: 56px;
+  border-radius: 33px;
 }
 
 .imageContainer {
@@ -35,8 +35,8 @@
 
 .link {
   position: absolute;
-  bottom: 50px;
-  left: 20px;
+  bottom: 120px;
+  left: 30px;
   padding: 0;
   margin: 0;
   background-color: #fff;

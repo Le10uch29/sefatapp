@@ -1,3 +1,7 @@
+.AppContainer {
+  display: flex;
+}
+
 .app-container {
   position: relative;
   display: flex;
