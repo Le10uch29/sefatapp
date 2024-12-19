@@ -50,68 +50,79 @@ const SettingCart: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="setting-cart-form">
-      <div className="image-container">
-        <Image
-          src={
-            formData.imageUrl ||
-            "https://via.placeholder.com/275x340?text=275x340"
-          }
-          alt="Profile"
-          width={275}
-          height={340}
-          className="image"
-        />
-        <div className="overlay">
-          <label htmlFor="imageUpload" className="img-btn">
-            Şəkili dəyiş
-          </label>
-          <input
-            id="imageUpload"
-            type="file"
-            accept="image/*"
-            style={{ display: "none" }}
-            onChange={handleImageChange}
+    <div className="card">
+      <form onSubmit={handleSubmit} className="setting-cart-form">
+        <div className="image-container">
+          <Image
+            src={
+              formData.imageUrl ||
+              "https://via.placeholder.com/275x340?text=275x340"
+            }
+            alt="Profile"
+            width={275}
+            height={340}
+            className="image"
           />
+          <div className="overlay">
+            <label htmlFor="imageUpload" className="img-btn">
+              Şəkili dəyiş
+            </label>
+            <input
+              id="imageUpload"
+              type="file"
+              accept="image/*"
+              style={{ display: "none" }}
+              onChange={handleImageChange}
+            />
+          </div>
         </div>
-      </div>
-
-      <label>Ad/Soyad</label>
-      <input
-        type="text"
-        name="Name"
-        value={formData.Name}
-        onChange={handleChange}
-      />
-
-      <label>Email</label>
-      <input
-        type="email"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-
-      <label>Mobil nömrə</label>
-      <input
-        type="tel"
-        name="phoneNumber"
-        value={formData.phoneNumber.toString()}
-        onChange={handleChange}
-      />
-
-      <label>Ünvan</label>
-      <input
-        type="text"
-        name="addressInput"
-        value={formData.addressInput}
-        onChange={handleAddressChange}
-      />
-
-      <button type="submit" className="btn">
-        Save
-      </button>
-    </form>
+        <div className="imputs">
+          <div className="input-control">
+            <label>Ad/Soyad</label>
+            <input
+              type="text"
+              name="Name"
+              className="input"
+              value={formData.Name}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="input-control">
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              className="input"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="input-control">
+            <label>Mobil nömrə</label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              className="input"
+              value={formData.phoneNumber.toString()}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="input-control">
+            <label>Ünvan</label>
+            <input
+              type="text"
+              name="addressInput"
+              className="input"
+              value={formData.addressInput}
+              onChange={handleAddressChange}
+            />
+          </div>
+        </div>
+        <button type="submit" className="btn">
+          Save
+        </button>
+      </form>
+    </div>
   );
 };
 

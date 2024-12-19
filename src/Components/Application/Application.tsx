@@ -8,10 +8,12 @@ import EllipseTwo from "../../../public/EllipseTwo.png";
 import EllipseThree from "../../../public/EllipseThree.png";
 import EllipseFour from "../../../public/EllipseFour.png";
 import ORH8EV2 from "../../../public/ORH8EV2.png";
+import Line from "../../../public/Line.svg";
 
 const Application = () => {
   return (
     <div className="app-container">
+      <Image src={Line} alt={`Line `} className="ground_line " />
       <Image src={ORH8EV2} alt={`ORH8EV2 `} className="app-screenshot" />
       <div className="content-section">
         <p className="appTitle">Ən yaxşı təcrübə üçün tətbiqimizi endirin</p>
@@ -22,9 +24,7 @@ const Application = () => {
           <Image src={EllipseFour} alt={`User-4`} className="user-avatar" />
           <span className="customers-count">2400+</span>
         </div>
-        <div className="happy-customers">
-          <span className="customers-text">Happy Customers</span>
-        </div>
+        <span className="customers-text">Happy Customers</span>
       </div>
     </div>
   );

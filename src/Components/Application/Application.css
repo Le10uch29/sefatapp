@@ -6,18 +6,20 @@
 }
 
 .ground_line {
-  transform: rotatey(180deg);
+  position: absolute;
+  z-index: 1;
+  bottom: 300px;
+  right: -60px;
 }
 
 .content-section {
   display: flex;
   flex-direction: column;
-  width: 1240px;
-  height: 361px;
+  height: 267px;
   padding: 64px 123px 120px;
   text-align: right;
   border-radius: 62px;
-  background-color: #226d64;
+  background: linear-gradient(120deg, #226d64 -50%, #fff);
 }
 
 .appTitle {
@@ -66,15 +68,20 @@
 }
 
 .customers-count {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 28.94px;
+  font-weight: 400;
   color: #fff;
+  text-align: left;
+  line-height: 33.1px;
   margin-left: 10px;
 }
 
 .customers-text {
-  font-size: 1rem;
+  font-size: 20.67px;
+  font-weight: bold;
   color: #fff;
+  text-align: left;
+  line-height: 28.9px;
 }
 
 .image-section {
@@ -84,10 +91,9 @@
 
 .app-screenshot {
   position: absolute;
-  top: -225px;
-  left: 80px;
+  bottom: 350px;
+  left: 0;
   width: 100%;
-
   border-radius: 20px;
   z-index: 999;
 }

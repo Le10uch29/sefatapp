@@ -20,28 +20,26 @@ function Home() {
   const { userData } = useUserContext();
 
   return (
-    <UserProvider>
-      <div className="page">
-        <header></header>
+    <div className="page">
+      <header></header>
 
-        <main className="main">
-          <div className="container">
-            <SearchBar />
-            <h2>{userData.Name}</h2>
-            <div className="section-1">
-              <ComponentDetail />
-              <div className="charts">
-                <ExpenseStatistics />
-                <LargeGraph />
-                <BalanceGraph />
-              </div>
+      <main className="main">
+        <div className="container">
+          <SearchBar />
+          <h2>{userData.Name}</h2>
+          <div className="section-1">
+            <ComponentDetail />
+            <div className="charts">
+              <ExpenseStatistics />
+              <LargeGraph />
+              <BalanceGraph />
             </div>
-            <StatisticsCards />
-            <Application />
           </div>
-        </main>
-        <footer className="footer"></footer>
-      </div>
-    </UserProvider>
+          <StatisticsCards />
+          <Application />
+        </div>
+      </main>
+      <footer className="footer"></footer>
+    </div>
   );
 }
