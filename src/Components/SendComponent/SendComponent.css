@@ -1,0 +1,76 @@
+.form-container {
+  margin-bottom: 310px;
+  width: 621px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 105px 108px;
+  height: 481px;
+  box-shadow: 4px 4px 54.9px rgba(0, 0, 0, 0.1);
+  border-radius: 43px;
+  background-image: url(".../../../../../public/sendAir.svg");
+  background-position: 250px 70px;
+  background-repeat: no-repeat;
+}
+
+.input-descr {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  color: #226d64;
+}
+
+.pdf-uploader {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.uploader-label {
+  display: block;
+  border: 1px solid #2e7262;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #88b0a3;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.uploader-label:hover {
+  border-color: #1e5143;
+}
+
+.uploader-content {
+  display: flex;
+  align-items: center;
+}
+
+.download-icon {
+  color: #2e7262;
+  font-size: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.btn {
+  width: 621px;
+  padding: 13px 246.5px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  background-color: #226d64;
+  border-radius: 20px;
+}
