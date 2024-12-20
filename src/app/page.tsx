@@ -26,7 +26,10 @@ function Home() {
       <main className="main">
         <div className="container">
           <SearchBar />
-          <h2>{userData.Name}</h2>
+          <h2 className="name-title">
+            Salam {userData.Name}{" "}
+            <span className="name-2th">Xoş gəldiniz!</span>
+          </h2>
           <div className="section-1">
             <ComponentDetail />
             <div className="charts">

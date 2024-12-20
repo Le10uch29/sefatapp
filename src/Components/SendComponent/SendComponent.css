@@ -22,25 +22,27 @@
   font-size: 28px;
   font-weight: 400;
   color: #226d64;
+  margin-bottom: 14px;
 }
 
 .pdf-uploader {
-  width: 100%;
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 621px;
   margin: 20px auto;
   font-family: "Poppins", sans-serif;
 }
 
 .uploader-label {
-  display: block;
-  border: 1px solid #2e7262;
-  border-radius: 10px;
-  padding: 10px 20px;
+  border: 1px solid #226d64;
+  border-radius: 20px;
+  padding: 18px 32px;
+  margin-bottom: 42px;
   cursor: pointer;
   text-align: left;
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: #88b0a3;
   font-size: 16px;
@@ -53,12 +55,15 @@
 
 .uploader-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
-
-.download-icon {
-  color: #2e7262;
+.uploader-content span {
+  color: #208971;
+  opacity: 40%;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .file-input {

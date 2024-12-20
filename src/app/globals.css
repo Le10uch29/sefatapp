@@ -10,6 +10,16 @@ body {
   padding: 44px;
 }
 
+.name-title {
+  color: #226d64;
+  font-size: 44px;
+  width: 308px;
+}
+
+.name-2th {
+  font-size: 48px;
+}
+
 .section-1 {
   display: grid;
   grid-template-columns: 12 1fr;

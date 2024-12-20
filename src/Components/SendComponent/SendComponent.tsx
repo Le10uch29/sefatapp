@@ -12,7 +12,7 @@ const SendComponent: React.FC = () => {
             <p className="input-descr">Nəticə</p>
             <label className="uploader-label" htmlFor="file-upload">
               <div className="uploader-content">
-                <span>Neticənin pdf-ni yükləyin</span>
+                <span>Neticənin pdfni yükləyin</span>
                 <Image
                   alt="upload-file-icon"
                   src={uil_import}
@@ -27,10 +27,10 @@ const SendComponent: React.FC = () => {
                 className="file-input"
               />
             </label>
+            <button type="submit" className="btn">
+              Göndərin
+            </button>
           </div>
-          <button type="submit" className="btn">
-            Göndərin
-          </button>
         </form>
       </div>
     </div>
