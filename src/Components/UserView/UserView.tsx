@@ -5,11 +5,11 @@ export interface UserViewProps {
   user: User;
 }
 
-export const UserView: FC<UserViewProps> = ({ user }) => {
+export const UserView: FC<UserViewProps> = () => {
   return (
     <>
       <div>
-        <h1 className="user-view__name">Salam {user.username} Xoş gəldiniz!</h1>
+        <h2 className="name-title"></h2>
       </div>
     </>
   );

@@ -19,7 +19,7 @@ const ComponentDetail: React.FC = () => {
           alt="Profile"
           width={275}
           height={340}
-          className="image"
+          className="contact-image"
         />
         <Link href="/ParametrsPage" className="link">
           Şəkili dəyiş

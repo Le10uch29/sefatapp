@@ -1,19 +1,44 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
+  min-width: 320px;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 44px;
+  padding: 67px;
 }
 
 .name-title {
   color: #226d64;
   font-size: 44px;
   width: 308px;
+  align-self: center;
 }
 
 .name-2th {

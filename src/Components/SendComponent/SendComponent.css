@@ -1,15 +1,11 @@
-.form-container {
+.form-card {
   margin-bottom: 310px;
   width: 837px;
-}
-
-.form-control {
+  height: 671px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 100%;
   padding: 105px 108px;
-  height: 481px;
   box-shadow: 4px 4px 54.9px rgba(0, 0, 0, 0.1);
   border-radius: 43px;
   background-image: url(".../../../../../public/sendAir.svg");

@@ -5,7 +5,7 @@ import "./SearchBar.css";
 
 const SearchBar: React.FC = () => {
   return (
-    <div className="searchBarContainer">
+    <div className="search-bar-container">
       <button className="sortButton">
         <Image src="/vector.png" alt="Sort" width={16} height={16} />
         Sırala

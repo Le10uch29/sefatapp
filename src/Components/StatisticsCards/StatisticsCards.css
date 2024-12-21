@@ -1,6 +1,7 @@
 .cardsContainer {
   display: flex;
-  padding: 20px;
+  width: 1232.13px;
+  padding: 26.37px 24px 26.37px;
   gap: 32.95px;
   height: 118.65px;
   margin-bottom: 343px;
@@ -11,7 +12,6 @@
   width: 220.16px;
   background-color: #fff;
   border-radius: 16px;
-  padding: 26.37px;
   text-align: center;
 }
 
@@ -19,14 +19,19 @@
   margin-bottom: 8px;
 }
 
+.group-img {
+  margin-right: 15.82px;
+}
+
 .title {
+  margin: 0;
   color: #7a7a7a;
   font-size: 14px;
-  margin: 0;
+  margin-bottom: 6.05px;
 }
 
 .value {
   font-size: 18px;
   font-weight: bold;
-  margin: 8px 0 0;
+  margin: 0;
 }

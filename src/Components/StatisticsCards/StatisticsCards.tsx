@@ -48,7 +48,13 @@ const StatisticsCards: React.FC = () => {
       {cardData.map((card) => (
         <div key={card.id} className="statistiCard">
           <div className="iconWrapper">
-            <Image src={card.iconSrc} alt={card.title} width={48} height={48} />
+            <Image
+              src={card.iconSrc}
+              alt={card.title}
+              width={48}
+              height={48}
+              className="group-img"
+            />
           </div>
           <div>
             <p className="title">{card.title}</p>

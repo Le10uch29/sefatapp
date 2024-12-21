@@ -10,7 +10,7 @@ export default function SendPage() {
       <main>
         <div className="container">
           <SearchBar />
-          <h1 className="title">Nəticəni yolla</h1>
+          <h1 className="send-title">Nəticəni yolla</h1>
           <SendComponent />
           <Application />
         </div>

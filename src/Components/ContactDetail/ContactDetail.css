@@ -1,22 +1,30 @@
 .card {
   display: grid;
   grid-column: 1/1;
-  width: 524px;
-  height: 609px;
-  border-radius: 16px;
+  width: 624px;
+  height: 739px;
+  border-radius: 56px;
   box-shadow: 4px 4px 34px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   background-color: #fff;
-  padding: 71px 44px 62.5px;
+  padding: 62px 44px 62.5px;
   grid-template-columns: reapet(2, 1fr);
   grid-template-rows: reapet(2, 1fr);
   justify-content: start;
   border-radius: 33px;
+  margin-right: 9px;
 }
 
 .imageContainer {
   position: relative;
-  height: 100%;
+  width: 275px;
+  height: 338px;
+  border-radius: 20px;
+}
+
+.contact-image {
+  width: 100%;
+  border-radius: 20px;
 }
 
 .rating {
@@ -35,7 +43,7 @@
 
 .link {
   position: absolute;
-  bottom: 70px;
+  bottom: 20px;
   left: 30px;
   padding: 0;
   margin: 0;
