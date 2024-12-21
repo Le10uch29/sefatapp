@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Search from "../../../public/Search.png";
 import "./SearchBar.css";
 
 const SearchBar: React.FC = () => {
@@ -17,7 +18,7 @@ const SearchBar: React.FC = () => {
       />
 
       <button className="searchButton">
-        <Image src="/icons/search.png" alt="Search" width={16} height={16} />
+        <Image src={Search} alt="Search" width={16} height={16} />
         Axtarış
       </button>
     </div>

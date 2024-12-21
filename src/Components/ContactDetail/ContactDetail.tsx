@@ -28,25 +28,26 @@ const ComponentDetail: React.FC = () => {
       <div className="details">
         <h2 className="detailTitle">Address</h2>
         <p className="detailDescr">
-          <strong> Address Line:</strong> {userData.addressLine || ""}
+          <strong> Address Line:</strong>{" "}
+          <span>{userData.addressLine || ""}</span>
         </p>
         <p className="detailDescr">
-          <strong>City:</strong> {userData.addressCity || ""}
+          <strong>City:</strong> <span>{userData.addressCity || ""}</span>
         </p>
         <p className="detailDescr">
-          <strong>State:</strong> {userData.addressState || ""}
+          <strong>State:</strong> <span>{userData.addressState || ""}</span>
         </p>
         <p className="detailDescr">
-          <strong>Country:</strong> {userData.addressCountry || ""}
+          <strong>Country:</strong> <span>{userData.addressCountry || ""}</span>
         </p>
       </div>
       <div className="details-1">
         <h2 className="detailTitle">Contact Details</h2>
         <p className="detailDescr">
-          <strong>Phone:</strong> {userData.phoneNumber || ""}
+          <strong>Phone:</strong> <span>{userData.phoneNumber || ""}</span>
         </p>
         <p className="detailDescr">
-          <strong>Email:</strong> {userData.email || ""}
+          <strong>Email:</strong> <span>{userData.email || ""}</span>
         </p>
       </div>
     </div>

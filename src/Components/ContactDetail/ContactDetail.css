@@ -74,20 +74,24 @@
 }
 
 .detailTitle {
-  font-size: 18px;
-  color: #43766c;
-  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #226d64;
+  margin-bottom: 8px;
+  letter-spacing: 1%;
 }
 
-.detailDescr {
+.detailDescr strong {
   display: contents;
   flex-direction: column;
   gap: 7px;
-  font-size: 14px;
+  font-size: 20px;
   margin: 4px 0;
-  color: #444;
+  color: 50% #000;
+  opacity: 50%;
 }
 
-strong {
-  color: #333;
+.detailDescr span {
+  font-size: 20px;
+  color: #000;
 }

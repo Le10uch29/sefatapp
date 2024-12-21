@@ -21,8 +21,6 @@ function Home() {
 
   return (
     <div className="page">
-      <header></header>
-
       <main className="main">
         <div className="container">
           <SearchBar />
@@ -42,7 +40,6 @@ function Home() {
           <Application />
         </div>
       </main>
-      <footer className="footer"></footer>
     </div>
   );
 }
