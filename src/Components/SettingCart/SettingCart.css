@@ -1,13 +1,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 805px;
+  width: 875px;
   height: 609px;
   border-radius: 33px;
   box-shadow: 4px 4px 34px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  padding: 71px 44px 62.5px;
-  justify-content: start;
+  padding: 71px 108px 62.5px;
   margin-bottom: 343px;
 }
 
@@ -53,8 +52,8 @@
 
 .img-btn {
   position: absolute;
-  bottom: -10px;
-  right: -10px;
+  bottom: 25px;
+  right: -5px;
 }
 
 .input-control {

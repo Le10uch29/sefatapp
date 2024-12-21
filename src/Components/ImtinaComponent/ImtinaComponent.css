@@ -1,0 +1,53 @@
+.sebeb-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 837px;
+  padding: 325px 108px 48px;
+  background-color: #fff;
+  box-shadow: 4px 4px 54.9px rgba(0, 0, 0, 0.2);
+  border-radius: 49px;
+  margin-bottom: 360px;
+  background-image: url(.../../../../../public/sebeb.png);
+  background-position: 390px 55px;
+  background-repeat: no-repeat;
+}
+
+.sebeb-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: #226d64;
+  margin-bottom: 30px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.sebeb-area {
+  width: 621px;
+  height: 236px;
+  padding: 25px 39px;
+  border-radius: 20px;
+  border-color: #226d64;
+  margin-bottom: 52px;
+  resize: none;
+}
+
+.sebeb-area::placeholder {
+  color: #208971;
+  font-family: 20px;
+  font-weight: 500;
+  opacity: 40%;
+}
+
+.btn {
+  align-self: center;
+  text-align: center;
+  width: 721px;
+  height: 67px;
+  background-color: #226d64;
+  color: #fff;
+  font-family: 28px;
+  font-weight: 500;
+  border-radius: 20px;
+}

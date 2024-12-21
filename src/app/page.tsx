@@ -20,26 +20,23 @@ function Home() {
   const { userData } = useUserContext();
 
   return (
-    <div className="page">
-      <main className="main">
-        <div className="container">
-          <SearchBar />
-          <h2 className="name-title">
-            Salam {userData.Name}{" "}
-            <span className="name-2th">Xoş gəldiniz!</span>
-          </h2>
-          <div className="section-1">
-            <ComponentDetail />
-            <div className="charts">
-              <ExpenseStatistics />
-              <LargeGraph />
-              <BalanceGraph />
-            </div>
+    <main className="main">
+      <div className="container">
+        <SearchBar />
+        <h2 className="name-title">
+          Salam {userData.Name} <span className="name-2th">Xoş gəldiniz!</span>
+        </h2>
+        <div className="section-1">
+          <ComponentDetail />
+          <div className="charts">
+            <ExpenseStatistics />
+            <LargeGraph />
+            <BalanceGraph />
           </div>
-          <StatisticsCards />
-          <Application />
         </div>
-      </main>
-    </div>
+        <StatisticsCards />
+        <Application />
+      </div>
+    </main>
   );
 }
