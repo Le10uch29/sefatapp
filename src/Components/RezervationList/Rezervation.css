@@ -1,0 +1,148 @@
+.rezerv-card {
+  width: 267px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.image-comteiner {
+  position: relative;
+  border-radius: 12.86px;
+  width: 267px;
+  height: 284px;
+  padding-top: 8px;
+  background-color: #d2eaef;
+}
+
+.block-descr {
+  position: absolute;
+  bottom: -12px;
+  right: 50px;
+  font-size: 12.29px;
+  line-height: 16.7px;
+  font-weight: 400;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #226d64;
+  color: #fff;
+  width: 187.72px;
+  height: 32.14px;
+  text-align: center;
+  padding: 9.14px 29.85px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 24.5px 22px;
+  height: 262px;
+}
+
+.id-rezerv {
+  font-size: 21.21px;
+  font-weight: 600;
+  color: #0f312d;
+}
+
+.content-title {
+  margin: 0;
+  margin-bottom: 20.71px;
+  font-size: 12.93px;
+  font-weight: 500;
+  color: #0f312d;
+}
+
+.content-descr {
+  margin: 0;
+  font-size: 14.29px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #226d64;
+}
+
+.content-descr:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.send-link {
+  margin-right: 6px;
+  color: blue;
+  text-decoration: none;
+}
+
+.content-date {
+  font-size: 10.93px;
+  font-weight: 300;
+  color: #0f312d;
+  margin-bottom: 24px;
+}
+
+.link-group {
+  display: flex;
+  width: 218px;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-link {
+  background-color: #226d64;
+  cursor: pointer;
+  color: #fff;
+  font-size: 10.93px;
+  font-weight: 300;
+  padding: 5.5px 15px;
+  width: 108px;
+  height: 27px;
+  border-radius: 7px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-link:hover {
+  color: #226d64;
+  background-color: #fff;
+  border: 1px solid #226d64;
+}
+
+.delete-link {
+  background-color: #fff;
+  cursor: pointer;
+  color: #226d64;
+  border: 1px solid #226d64;
+  font-size: 10.93px;
+  font-weight: 300;
+  padding: 5.5px 17px;
+  width: 108px;
+  height: 27px;
+  border-radius: 7px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-link:hover {
+  border: none;
+  background-color: #226d64;
+  color: #fff;
+}
+
+.list-container {
+  margin-bottom: 340px;
+  width: 1166px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.card-list__item {
+  width: 267px;
+  height: 556px;
+  border-radius: 12.86px;
+  box-shadow: 0 2.57px 13.5px rgba(48, 123, 196, 10%);
+}
