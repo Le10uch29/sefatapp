@@ -1,0 +1,66 @@
+.notification-content {
+  display: flex;
+}
+
+.Notifications-container {
+  margin-bottom: 340px;
+}
+
+.Notifications-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 1068px;
+}
+
+.Notification-list__item {
+  width: 100%;
+  height: 174.07px;
+  padding: 27.35px;
+  border-bottom: 2px solid #e4e8ee;
+}
+
+.Notification-img {
+  margin: 0;
+  margin-right: 27.34px;
+  width: 55px;
+  height: 55px;
+}
+
+.notification-block span {
+  color: #a5acb8;
+  font-size: 23.93px;
+  line-height: 34.2px;
+}
+
+.notification-text {
+  margin: 0;
+  margin-bottom: 13.67px;
+  font-size: 23.93px;
+  font-weight: 400;
+  color: #1a1f36;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.pagination-btn {
+  margin: 0 4px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.pagination-btn.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination-btn:hover {
+  background-color: #d0d0d0;
+}

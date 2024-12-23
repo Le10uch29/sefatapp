@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
-import { Poppins, Roboto_Mono } from "next/font/google";
+import { Poppins, Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import { NotificationsProvider } from "@/Components/NotificationsContext/NotificationsContext";
 
-const PoppinsSans = Poppins({
-  variable: "--font-Poppins-sans",
+export const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  variable: "--poppins",
+  weight: ["400", "500"],
 });
 
-const RobotoMono = Roboto_Mono({
-  variable: "--font-Roboto-mono",
+export const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  variable: "--inter",
+  weight: ["700", "400"],
+});
+export const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--montserrat",
+  weight: ["700", "400"],
 });
 
 export const metadata: Metadata = {
@@ -26,8 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="az">
-      <body className={`${PoppinsSans.variable} ${RobotoMono.variable}`}>
-        {children}
+      <body
+        className={`${poppins.variable} ${inter.variable} ${montserrat.variable}`}
+      >
+        <NotificationsProvider>{children}</NotificationsProvider>
       </body>
     </html>
   );

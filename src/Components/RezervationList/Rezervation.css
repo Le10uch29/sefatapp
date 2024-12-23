@@ -75,6 +75,10 @@
   font-weight: 300;
   color: #0f312d;
   margin-bottom: 24px;
+  background-image: url("../../../public/saat.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 20px;
 }
 
 .link-group {

@@ -30,7 +30,7 @@ export const RezervationCard: FC<RezervationCardProps> = ({
 }) => {
   const formattedDate = (() => {
     const [dayPart, timePart] = date.split(", Saat : ");
-    return `${dayPart} at ${timePart}`;
+    return `${dayPart} Saat: ${timePart}`;
   })();
 
   return (
