@@ -1,20 +1,24 @@
-.expense-statistics {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    width: 200px;
-    height: 244.34px;
-  }
-  
-  .chart-container {
-    width: 40%;
-    text-align: center;
-  }
-  
-  .bar-chart-container {
-    width: 50%;
-  }
-  
-  .bar-chart-title {
-    margin-bottom: 10px;
-  }
+.charts-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 34px 47px 32.52px;
+  width: 660px;
+  height: 297px;
+}
+
+.chart-container {
+  width: 40%;
+  text-align: center;
+}
+
+.bar-chart-container {
+  width: 50%;
+}
+
+.bar-chart-title {
+  margin-bottom: 10px;
+}

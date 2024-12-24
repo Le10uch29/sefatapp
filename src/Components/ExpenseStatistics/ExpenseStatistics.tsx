@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Doughnut, Bar } from "react-chartjs-2";
+import { Bar, Pie } from "react-chartjs-2";
 import { ScriptableContext } from "chart.js";
 import "./ExpenseStatistics.css";
 import {
@@ -28,12 +28,13 @@ Chart.register(
 const ExpenseStatistics: React.FC = () => {
   // Data for the Pie Chart
   const pieData = {
-    labels: ["Recept et", "Analiz yokla", "Rezerv et"],
+    labels: ["Analiz yokla", "Recept et", "Resept al"],
     datasets: [
       {
-        data: [45, 35, 20],
-        backgroundColor: ["#FFA600", "#0022FF", "#FF00F6"],
+        data: [35, 45, 45],
+        backgroundColor: ["#FA00FF", "#1814F3", "#FFA600"],
         borderWidth: 0,
+        hoverOffset: 30,
       },
     ],
   };
@@ -68,26 +69,13 @@ const ExpenseStatistics: React.FC = () => {
   };
 
   return (
-    <div
-      style={{
-        width: "270px",
-        height: "271px",
-        border: "1px solid #E0E0E0",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        backgroundColor: "#FFFFFF",
-        padding: "10px",
-        boxSizing: "border-box",
-      }}
-    >
+    <div className="charts-card">
       {/* Pie Chart */}
-      <div style={{ width: "50%", height: "100%" }}>
-        <Doughnut
+      <div style={{ width: "181.02px", height: "152.6px" }}>
+        <Pie
           data={pieData}
           options={{
-            cutout: "65%",
+            cutout: "",
             plugins: { legend: { display: false } },
           }}
         />
