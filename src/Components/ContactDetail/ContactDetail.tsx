@@ -21,7 +21,7 @@ const ComponentDetail: React.FC = () => {
           height={340}
           className="contact-image"
         />
-        <Link href="/ParametrsPage" className="link">
+        <Link href="/SettingPage" className="link">
           Şəkili dəyiş
         </Link>
       </div>
