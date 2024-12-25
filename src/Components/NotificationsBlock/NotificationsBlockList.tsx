@@ -73,19 +73,21 @@ const NotificationsBlockList: React.FC = ({}) => {
           </li>
         ))}
       </ul>
-      <div className="pagination-container">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => handlePageChange(index + 1)}
-            className={`pagination-btn ${
-              currentPage === index + 1 ? "active" : ""
-            }`}
-          >
-            {index + 1}
-          </button>
-        ))}
-      </div>
+      {totalPages > 1 && (
+        <div className="pagination-container">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index}
+              onClick={() => handlePageChange(index + 1)}
+              className={`pagination-btn ${
+                currentPage === index + 1 ? "active" : ""
+              }`}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
