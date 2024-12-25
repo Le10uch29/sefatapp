@@ -174,3 +174,44 @@
 .pagination-btn:hover {
   background-color: #d0d0d0;
 }
+
+@media (max-width: 768px) {
+  .list-container {
+    width: 768px;
+    flex-wrap: wrap;
+  }
+
+  .card-list__item {
+    width: 167px;
+  }
+
+  .image-comteiner {
+    width: 167px;
+    height: 176px;
+  }
+
+  .block-descr {
+    bottom: -12px;
+    right: 20px;
+    font-size: 10px;
+    line-height: 13px;
+    width: 130.72px;
+    height: 22.14px;
+    padding: 5.14px 25.85px;
+  }
+
+  .content {
+    width: 167px;
+    padding: 10px 16.5px 14px;
+    height: 262px;
+  }
+
+  .content-title {
+    font-size: 8px;
+  }
+
+  .content-descr {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}

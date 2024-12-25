@@ -31,7 +31,7 @@ body {
   align-items: center;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 67px;
+  padding: 0 67px;
 }
 
 .name-title {
@@ -64,4 +64,11 @@ body {
   border: none;
   cursor: pointer;
   background-color: inherit;
+}
+
+@media (max-width: 788px) {
+  .container {
+    max-width: 788px;
+    padding: 0 20px;
+  }
 }
