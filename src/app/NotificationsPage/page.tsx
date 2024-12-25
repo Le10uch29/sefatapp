@@ -7,7 +7,7 @@ const NotificationsPage = () => {
   return (
     <div className="container">
       <SearchBar />
-      <h1>Bildirişlər</h1>
+      <h1 className="notification-title">Bildirişlər</h1>
       <NotificationsBlockList />
       <Application2 />
     </div>

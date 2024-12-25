@@ -33,7 +33,7 @@ const ExpenseStatistics: React.FC = () => {
       {
         data: [35, 45, 45],
         backgroundColor: ["#FA00FF", "#1814F3", "#FFA600"],
-        borderWidth: 0,
+        borderWidth: 2,
         hoverOffset: 30,
       },
     ],
@@ -71,7 +71,7 @@ const ExpenseStatistics: React.FC = () => {
   return (
     <div className="charts-card">
       {/* Pie Chart */}
-      <div style={{ width: "181.02px", height: "152.6px" }}>
+      <div style={{ width: "181.02px", height: "152.6px", zIndex: "999" }}>
         <Pie
           data={pieData}
           options={{
