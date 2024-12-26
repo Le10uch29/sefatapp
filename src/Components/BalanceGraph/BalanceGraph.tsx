@@ -89,24 +89,12 @@ const BalanceGraph: React.FC = () => {
         </div>
 
         {/* Right Card */}
-        <div
-          style={{
-            backgroundColor: "#F9FAFB",
-            borderRadius: "8px",
-            padding: "12px",
-            textAlign: "left",
-            width: "45%",
-          }}
-        >
-          <p style={{ margin: 0, color: "#9CA3AF", fontSize: "14px" }}>
-            Balance
-          </p>
-          <h3 style={{ margin: "5px 0", fontSize: "20px", fontWeight: "600" }}>
-            $52,422
-          </h3>
-          <p style={{ margin: 0, color: "#EF4444", fontSize: "14px" }}>
-            -4.75%
-          </p>
+        <div className="graph-balance">
+          <span className="balance-block">Balance</span>
+          <div className="balance-info">
+            <strong className="balance-percent">$52,422</strong>
+            <p className="percent-descr">-4.75%</p>
+          </div>
         </div>
       </div>
 
