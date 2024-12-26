@@ -30,8 +30,8 @@ function Home() {
           <ComponentDetail />
           <div className="charts">
             <ExpenseStatistics />
-            <LargeGraph />
             <BalanceGraph />
+            <LargeGraph />
           </div>
         </div>
         <StatisticsCards />

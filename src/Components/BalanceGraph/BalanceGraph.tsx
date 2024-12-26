@@ -10,6 +10,7 @@ import {
   Tooltip,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import "./BalanceGraph.css";
 
 // Register Chart.js components
 ChartJS.register(
@@ -55,48 +56,36 @@ const BalanceGraph: React.FC = () => {
   };
 
   return (
-    <div
-      style={{
-        border: "1px solid #E5E7EB",
-        borderRadius: "8px",
-        width: "500px",
-        margin: "0",
-        padding: "16px",
-        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
+    <div className="balance-graph">
       {/* Header */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "20px",
-        }}
-      >
-        <h3 style={{ margin: 0 }}>Balance</h3>
-        <p style={{ color: "#6B7280", margin: 0, fontSize: "14px" }}>Monthly</p>
+      <div className="balance-content">
+        <h3 className="graph-title">Balance</h3>
+        <select name="monthly" className="graph-select">
+          <option value="Monthly">Monthly</option>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="Апрель">Апрель</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="Август">Август</option>
+          <option value="September">September</option>
+          <option value="November">November</option>
+          <option value="October">October</option>
+          <option value="December">December</option>
+        </select>
       </div>
 
       {/* Cards */}
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="graph-info">
         {/* Left Card */}
-        <div
-          style={{
-            backgroundColor: "#F9FAFB",
-            borderRadius: "8px",
-            padding: "12px",
-            textAlign: "left",
-            width: "45%",
-          }}
-        >
-          <p style={{ margin: 0, color: "#9CA3AF", fontSize: "14px" }}>Saves</p>
-          <h3 style={{ margin: "5px 0", fontSize: "20px", fontWeight: "600" }}>
-            43.50%
-          </h3>
-          <p style={{ margin: 0, color: "#10B981", fontSize: "14px" }}>
-            +2.45%
-          </p>
+        <div className="graph-saves">
+          <span className="saves-block">Saves</span>
+          <div className="saves-info">
+            <strong className="saves-percent">43.50%</strong>
+            <p className="percent-descr">+2.45%</p>
+          </div>
         </div>
 
         {/* Right Card */}
