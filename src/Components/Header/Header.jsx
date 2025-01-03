@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <nav className={style.nav}>
       <header className={style.header}>
-        <div className="container">
+        <div className="header-container">
           <div className={style.flexbl}>
             <div className={style.logo}>
               <Link href="/">

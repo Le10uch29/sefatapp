@@ -13,7 +13,7 @@ const Footer = () => {
   };
   return (
     <footer className={style.footer}>
-      <div className="container">
+      <div className="footer-container">
         <div className={style.flexbl}>
           <div className={style.logo}>
             <Link href="/">

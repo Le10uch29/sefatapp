@@ -70,7 +70,7 @@ const ExpenseStatistics = () => {
   return (
     <div className="charts-card">
       {/* Pie Chart */}
-      <div style={{ width: "181.02px", height: "152.6px", zIndex: "999" }}>
+      <div style={{ width: "181.02px", height: "152.6px" }}>
         <Pie
           data={pieData}
           options={{

@@ -1,7 +1,14 @@
+.footer-container {
+   
+    padding: 0 145px;
+}
+
 .footer {
     background: rgba(186, 210, 207, 1);
     font-family: var(--poppins);
-    padding: 75px 0;
+    padding: 75px 84.7px;
+    width: 1440px;
+
 
     .flexbl {
         display: flex;
@@ -69,6 +76,8 @@
                         position: absolute;
                         top: 11px;
                         right: 22px;
+                        background-color: inherit;
+                        border: none;
                     }
                 }
             }
