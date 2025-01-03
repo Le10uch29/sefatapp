@@ -1,0 +1,183 @@
+.nav{
+    position: relative;
+    width: 1440px;
+}
+.header{
+    padding: 23px 0;
+    font-family: var(--poppins);
+    .flexbl{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 161px;
+            height: 31px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .menu{
+            .menuList{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                .list{
+                    padding-right: 29px;
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                    .menuLink{
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 30px;
+                        transition: all .4s linear;
+                        &:hover{
+                            color: rgb(27, 87, 80);
+                        }
+                    }
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            .items{
+                padding-right: 26px;
+                &:last-child{
+                    padding-right: 0;
+                }
+                .iconLinks{
+                    svg{
+                        vertical-align: sub;
+                    }
+                }
+                .langLink{
+                    position: relative;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color:rgba(0, 0, 0, 0.37);
+                    svg{
+                        margin-right: 11px;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        height: 10px;
+                        border: 1px solid rgba(0, 0, 0, 0.24);
+                        top: 30%;
+                        left: 49%;
+                    }
+                }
+            }
+        }
+    }
+}
+.search{
+  position: relative;
+}
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+    .searchButton {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+      svg {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease, left 0.4s ease; 
+      }
+    }
+  
+    .searchInput {
+      position: relative;
+      width: 0;
+      height: 36px;
+      padding-left: 10px; 
+      padding-right: 10px;
+      border: 1px solid rgba(34, 109, 100, 1);;
+      border-radius: 18px;
+      opacity: 0;
+      background-color: white;
+      z-index: 1;
+      transition: all 0.4s ease;
+  
+      &.open {
+        width: 200px;
+        opacity: 1;
+        
+      }
+  
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+      }
+    }
+  
+    .searchInput.open + .searchButton svg {
+      left: 10px;
+      transform: translateX(0);
+    }
+}
+  
+/* Search */
+.searchResults {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 10px;
+  width: 300px;
+  height: auto;
+  background-color: white;
+  border: 1px solid rgba(34, 109, 100, 1);
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.searchResults ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchResults li {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.searchResults li:hover {
+  background-color: rgba(34, 109, 100, 0.1);
+}
+
+.loader {
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.noResults {
+  padding: 10px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+
+.resultLink {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  color: inherit;
+}

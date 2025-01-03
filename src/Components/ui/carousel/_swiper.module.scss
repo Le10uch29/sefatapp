@@ -1,0 +1,73 @@
+// components/SwiperCarousel.module.scss
+.SwiperWrapper {
+
+  h3 {
+
+    font-family: var(--poppins);
+    color: #226D64;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+}
+
+.swiperContainer {
+  position: relative;
+  
+}
+
+.swiperSlide {
+  background-color: #226D64;
+  border-radius: 32.557px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+
+
+
+  .caption {
+    color: #FFF;
+    font-size: 24.418px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+
+/* Custom Navigation Arrows */
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #226D64;
+
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+
+}
+
+.prevButton {
+  left: -60px;
+}
+
+.nextButton {
+  right: -60px;
+}

@@ -1,0 +1,163 @@
+.loginContainer {
+  /* width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.loginContainer .login, .login-main {
+  width: 481px;
+  background-color: rgba(216, 216, 216, 0.7);
+  border-radius: 20px;
+  /* blur bacground */
+  padding: 38px 51px 35px 51px;
+  border: 1px soldi red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginContainer .login img {
+  width: 48%;
+  height: 35px;
+  object-fit: cover;
+}
+.loginContainer .login .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14.58px;
+}
+.loginContainer .login-main .top .loginWith {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1 px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 21.39px;
+  font-weight: 500;
+}
+.loginContainer .login-main .or {
+  margin-top: 31.88px;
+  margin-bottom: 44.21px;
+  font-size: 22.37px;
+  font-weight: 400;
+  font-family: Work Sans;
+}
+
+.loginContainer .login-main .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 19.44px;
+}
+.loginContainer .login-main .form .input {
+  width: 100%;
+  height: 58.34px;
+  border: 2px solid rgba(34, 109, 100, 1);
+  border-radius: 9.72px;
+  padding: 17px 0px 19px 18px;
+  font-size: 19.45px;
+  font-weight: 400;
+}
+.loginContainer .login-main .forgotPass {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15.56px;
+  font-weight: 400;
+  font-family: Work Sans;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 45px;
+}
+.loginContainer .login-main .loginButton {
+  width: 100%;
+  height: 68.06px;
+  border: 1px solid rgba(34, 109, 100, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 109, 100, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 24.31px;
+  font-weight: 700;
+}
+.loginContainer .login-main .loginButton svg {
+  margin-left: 7.86px;
+}
+.loginContainer .login-main .fowardReg {
+  margin-top: 40.45px;
+  font-size: 17.45px;
+  font-weight: 400;
+}
+.loginContainer .login-main .fowardReg .createAcc {
+  color: rgba(34, 109, 100, 1);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.loginContainer .login-main .fowardReg .createAcc:hover {
+  color: rgba(34, 109, 100, 0.7);
+}
+.loginContainer .login-main .errorMessage {
+  color: red;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (max-height: 900px) {
+  .loginContainer {
+    justify-content: center;
+  }
+  .loginContainer .login-main{
+    padding: 30px 51px 0px;
+  }
+  .loginContainer .login-main .top .loginWith {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .loginContainer .login-main .or {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .loginContainer .login-main .form .input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .loginContainer .login-main .forgotPass {
+    margin-bottom: 20px;
+  }
+
+  .loginContainer .login-main .loginButton {
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .loginContainer .login-main .fowardReg {
+    font-size: 16px;
+    margin-top: 20px;
+    
+  }
+  .loginContainer .login-main .forgotPass {
+    margin-bottom: 0px;
+  }
+}

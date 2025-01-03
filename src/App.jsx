@@ -1,0 +1,13 @@
+"use client";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Page from "./app/page";
+import { UserProvider } from "./Components/contex/UserContext";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <UserProvider>
+      <Page />
+    </UserProvider>
+  </React.StrictMode>
+);

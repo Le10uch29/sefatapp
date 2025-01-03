@@ -1,0 +1,32 @@
+.dropdownContainer {
+  width: 184px;
+  position: absolute;
+  top: 70px;
+  right: 90px;
+  border-radius: 10px;
+  padding: 10px ;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdownContent a {
+  display: block;
+  padding: 10px 26px;
+  text-decoration: none;
+  color: #000; 
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-decoration: underline;
+}
+.dropdownContent a:hover{
+  background-color: #eee;
+}
