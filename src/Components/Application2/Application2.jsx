@@ -9,11 +9,11 @@ import EllipseThree from "../../../public/EllipseThree.png";
 import EllipseFour from "../../../public/EllipseFour.png";
 import ORH8EV2 from "../../../public/ORH8EV2.png";
 import Line from "../../../public/Line.svg";
-import apple from "../../../public/apple.png";
-import google from "../../../public/google.png";
+import apple from "../../../public/images/apple.png";
+import google from "../../../public/images/google.png";
 import Link from "next/link";
 
-const Application = () => {
+const Application2 = () => {
   return (
     <div className="app-container">
       <Image src={Line} alt={`Line `} className="ground_line " />
@@ -41,4 +41,4 @@ const Application = () => {
   );
 };
 
-export default Application;
+export default Application2;

@@ -3,12 +3,9 @@ import Link from "next/link";
 import style from "./_Footer.module.scss";
 import Image from "next/image";
 import Logo from "../../../public/images/Component3.png";
-import google from "../../../public/images/google.png";
-import apple from "../../../public/images/apple.png";
-import qrcode from "../../../public/qrcode.png";
 import { useState } from "react";
 
-const Footer = () => {
+const Footer2 = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
@@ -18,13 +15,10 @@ const Footer = () => {
     <footer className={style.footer}>
       <div className="footer-container">
         <div className={style.flexbl}>
-          <div className={style.footerInfo}>
-            <div className={style.logo}>
-              <Link href="/">
-                <Image src={Logo} width={1000} height={1000} alt="logo" />
-              </Link>
-            </div>
-            <Image src={qrcode} width={1000} height={1000} alt="qr code" />
+          <div className={style.logo}>
+            <Link href="/">
+              <Image src={Logo} width={1000} height={1000} alt="logo" />
+            </Link>
           </div>
           <div className={style.footerMenu}>
             <div className={style.menu}>
@@ -86,24 +80,6 @@ const Footer = () => {
                   </svg>
                 </button>
               </form>
-              <div className="footer-menuLink">
-                <Link href="#">
-                  <Image
-                    src={google}
-                    width={1000}
-                    height={1000}
-                    alt="google play"
-                  />
-                </Link>
-                <Link href="#">
-                  <Image
-                    src={apple}
-                    width={1000}
-                    height={1000}
-                    alt="app store"
-                  />
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -158,4 +134,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer2;

@@ -66,6 +66,13 @@ body {
   background-color: inherit;
 }
 
+.footer-menuLink {
+  display: flex;
+  width: 287px;
+  height: 53px;
+  gap: 9px;
+}
+
 @media (max-width: 788px) {
   .container {
     max-width: 788px;

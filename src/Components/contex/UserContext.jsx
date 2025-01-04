@@ -1,12 +1,10 @@
 "use client";
-import React, { useContext, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
-
-
-const UserContext = React.createContext(undefined);
+const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-  const [userData, setUserData] = useState({ 
+  const [userData, setUserData] = useState({
     imageUrl: "",
     Name: "",
     phoneNumber: "",

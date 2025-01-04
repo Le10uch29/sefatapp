@@ -1,24 +1,27 @@
-import Application2 from "@/Components/Application2/Application2";
-import NotificationsBlockList from "@/Components/NotificationsBlock/NotificationsBlockList";
-import SearchBar from "@/Components/SearchBar/SearchBar";
-import "./page.css";
-import Header from "@/Components/Header/Header";
-import Footer from "@/Components/Footer/Footer";
+"use client";
 
-const NotificationsPage = () => {
+import Header from "@/Components/Header/Header";
+import SearchBar from "@/Components/SearchBar/SearchBar";
+import NotificationsBlockList from "@/Components/NotificationsBlock/NotificationsBlockList";
+import Application2 from "@/Components/Application2/Application2";
+import Footer2 from "@/Components/Footer2/Footer2";
+import { Provider } from "react-redux";
+import store from "@/redux/store";
+
+const NotificationsPage = ({ Component, pageProps }) => {
   return (
-    <UserProvider>
+    <Provider store={store}>
       <main>
-    <div className="container">
-    <Header />
-      <SearchBar />
-      <h1 className="notification-title">Bildirişlər</h1>
-      <NotificationsBlockList />
-      <Application2 />
-      <Footer />  
-    </div>
-    </main>
-    </UserProvider>
+        <div className="container">
+          <Header {...pageProps} />
+          <SearchBar />
+          <h1 className="notification-title">Bildirişlər</h1>
+          <NotificationsBlockList {...pageProps} />
+          <Application2 />
+          <Footer2 />
+        </div>
+      </main>
+    </Provider>
   );
 };
 
