@@ -1,0 +1,100 @@
+.card {
+    position: relative;
+    width: 248px;
+    border-radius: 31px;
+    box-shadow: 4px 5px 17.1px 0px #00000026;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .img {
+        height: 131px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 19px 19px;
+        justify-content: space-between;
+        height: 100%;
+
+        .name {
+            font-family: var(--poppins);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            color: #226d64;
+        }
+
+        .address {
+            font-family: var(--poppins);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 19.5px;
+            text-align: center;
+            color: #b3b3b3;
+            padding-bottom: 5px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            justify-content: center;
+            padding-bottom: 9px;
+
+            .service {
+                font-family: var(--poppins);
+                font-size: 11.13px;
+                font-weight: 400;
+                line-height: 16.7px;
+                color: #226d64;
+                border-radius: 4px;
+                border: 1px solid #226d64;
+                padding: 2.78px 8.35px;
+            }
+        }
+
+        .rating_comment {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 9px;
+            width: 100%;
+
+            .rating {
+                font-size: 16px;
+            }
+
+            .comment_count {
+                font-family: var(--poppins);
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 19.5px;
+                color: #1b5750;
+            }
+        }
+
+        .link {
+            font-family: var(--poppins);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+            width: 166px;
+            padding: 5px 38px 5px 38px;
+            border-radius: 17px;
+            color: #ffffff;
+            background-color: #226d64;
+            border: 1px solid #226d64;
+            transition: all .4s ease-in-out;
+            &:hover{
+                color: #226d64;
+                background-color: #ffffff;
+            }
+        }
+    }
+}

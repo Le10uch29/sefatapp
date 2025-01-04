@@ -1,0 +1,98 @@
+.Blogs {
+    margin-top: 44px;
+    margin-bottom: 100px;
+
+    .wrapper {
+        max-width: 1220px;
+        margin: 0 auto;
+
+        &>h2 {
+            color: #226D64;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 60px;
+
+        }
+
+        .readMore {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #226D64;
+                font-family: Poppins;
+                font-size: 20.558px;
+                font-style: normal;
+                font-weight: 400;
+                gap: 13px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.BlogDetail {
+    margin-top: 44px;
+    margin-bottom: 100px;
+
+    .wrapper {
+        max-width: 1220px;
+        margin: 0 auto;
+
+        &>h2 {
+            color: #226D64;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+        }
+
+        .image_container {
+            position: relative;
+            width: 100%;
+            border-radius: 29px;
+            overflow: hidden;
+            height: 356px;
+        }
+
+        .content {
+            margin-top: 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                color: #226D64;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 41px;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            .sosial {
+                display: flex;
+                gap: 21px;
+                align-items: center;
+
+                p {
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}

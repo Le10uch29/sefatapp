@@ -1,0 +1,106 @@
+.subHead {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/aboutBanner.png);
+  background-size: cover;
+  /* background-position: 70% 25%; */
+  background-position-y: 30%;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.subHead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 161, 126, 0.44);
+}
+.subHead h1 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 65.29px;
+  z-index: 1;
+}
+
+/* Main Text */
+.mainText {
+  padding: 82px 0 84px 0;
+  background: url(../../assets/aboutBackImg.png) no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: Poppins;
+}
+.mainText img {
+  width: 395px;
+  height: 513px;
+}
+.mainText .textBox {
+  max-width: 1028px;
+  display: flex;
+  gap: 45px;
+}
+.mainText .textBox div {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.mainText .textBox h2 {
+  font-weight: 600;
+  font-size: 48px;
+  color: rgba(34, 109, 100, 1);
+  line-height: 61.87px;
+}
+.mainText .textBox p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.aboutContainer .testimonial {
+  position: relative;
+  width: 100%;
+  height: 441px;
+  background: url(../../assets/testimonialimg.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.aboutContainer .testimonial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 161, 126, 0.44);
+}
+.aboutContainer .testimonial .testimonialText {
+  max-width: 658px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutContainer .testimonial .testimonialText p {
+  font-weight: 400;
+  font-size: 22px;
+  color: rgba(252, 254, 254, 1);
+  z-index: 1;
+}
+.aboutContainer .testimonial .testimonialText hr {
+  width: 222px;
+  height: 1px;
+  color: rgba(191, 210, 248, 1);
+  z-index: 1;
+}

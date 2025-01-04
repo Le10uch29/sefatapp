@@ -1,0 +1,37 @@
+.title {
+    padding-bottom: 70px;
+    position: relative;
+
+    font-family: var(--poppins);
+
+    h2 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 72px;
+        color: rgba(34, 109, 100, 1);
+        text-align: center;
+    }
+
+    .links {
+        position: absolute;
+        right: 0;
+        top: 22px;
+        a {
+            font-size: 20.56px;
+            font-weight: 400;
+            line-height: 28.78px;
+            text-align: left;
+            color: rgba(34, 109, 100, 1);
+            transition: all .4s ease-in-out;
+            &:hover{
+                svg{
+                    margin-left: 6px;
+                }
+            }
+            svg{
+                margin-left: 12px;
+                transition: all .4s ease-in-out;
+            }
+        }
+    }
+}

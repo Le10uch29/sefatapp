@@ -1,0 +1,107 @@
+.card {
+    width: 25%;
+    padding-right: 82px;
+    padding-bottom: 40px;
+
+    .cardItems {
+        text-align: center;
+        box-shadow: 3px 4px 9.8px 0px rgba(0, 0, 0, 0.11);
+        font-family: var(--poppins);
+        border-radius: 31px;
+        padding: 18px 0px 18px 0px;
+        position: relative;
+        background-color: #fff;
+
+        .rating {
+            position: absolute;
+            top: 33px;
+            left: 0;
+
+            span {
+                position: absolute;
+                top: 8px;
+                left: 5px;
+                color: rgba(255, 156, 67, 1);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+
+                svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .favori {
+            position: absolute;
+            top: 33px;
+            right: 25px;
+        }
+
+        .image {
+            margin: auto;
+            width: 117px;
+            height: 117px;
+            border-radius: 100%;
+            box-shadow: 1px 0px 11.3px 0px rgba(34, 109, 100, 0.51);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            margin-top: 8px;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                color: rgba(0, 0, 0, 1);
+            }
+
+            p {
+                color: rgba(120, 120, 120, 0.56);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+            }
+
+            .pro {
+                background: rgba(233, 240, 240, 0.77);
+                margin: 20px 0;
+
+                h3 {
+                    color: rgba(34, 109, 100, 1);
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                }
+            }
+
+            .reserv {
+                a {
+                    padding: 5px 38px 5px 38px;
+                    background: rgba(34, 109, 100, 1);
+                    border-radius: 17px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    display: inline-block;
+                    line-height: 30px;
+                    color: rgba(255, 255, 255, 1);
+                    transition: all .4s ease-in-out;
+                    border: 1px solid rgba(34, 109, 100, 1);
+
+                    &:hover {
+                        color: rgba(34, 109, 100, 1);
+                        border: 1px solid rgba(34, 109, 100, 1);
+                        background: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+    }
+}

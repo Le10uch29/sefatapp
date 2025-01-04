@@ -1,0 +1,49 @@
+.border {
+    border: solid 1px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white),
+        linear-gradient(98.7deg, #226D64 19.22%, #20897166 73.07%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    .card {
+        max-width: 511px;
+        padding: 28px 40px 28px 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .img {
+            width: 76px;
+            height: 76px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .comment {
+                font-family: var(--poppins);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #5d5d5d;
+
+            }
+
+            .name {
+                font-family: var(--poppins);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                color: #5d5d5d;
+            }
+        }
+
+    }
+}

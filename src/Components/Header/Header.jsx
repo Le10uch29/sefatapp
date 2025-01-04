@@ -2,8 +2,8 @@
 import Link from "next/link";
 import style from "./_Header.module.scss";
 import Image from "next/image";
-import { useDispatch } from 'react-redux';
-import { openModal } from '../../redux/slices/authSlice';
+import { useDispatch } from "react-redux";
+import { openModal } from "../../redux/slices/authSlice";
 import Login from "../LoginModal/Login";
 import ProfileIcon from "@/assets/svg/ProfileIcon";
 import BagesIcon from "@/assets/svg/BagesIcon";
@@ -46,42 +46,65 @@ const Header = () => {
             <nav className={style.menu}>
               <ul className={style.menuList}>
                 <li className={style.list}>
-                  <Link href="/" className={style.menuLink}>Ana Səhifə</Link>
+                  <Link href="/" className={style.menuLink}>
+                    Ana Səhifə
+                  </Link>
                 </li>
                 <li className={style.list}>
-                  <Link href="/About" className={style.menuLink}>Haqqımızda</Link>
+                  <Link href="/About" className={style.menuLink}>
+                    Haqqımızda
+                  </Link>
                 </li>
                 <li className={style.list}>
-                  <Link href="/doctors" className={style.menuLink}>Həkimlər</Link>
+                  <Link href="/doctors" className={style.menuLink}>
+                    Həkimlər
+                  </Link>
                 </li>
                 <li className={style.list}>
-                  <Link href="/clinics" className={style.menuLink}>Klinikalar</Link>
+                  <Link href="/clinics" className={style.menuLink}>
+                    Klinikalar
+                  </Link>
                 </li>
                 <li className={style.list}>
-                  <Link href="/pharmacies" className={style.menuLink}>Apteklər</Link>
+                  <Link href="/pharmacies" className={style.menuLink}>
+                    Apteklər
+                  </Link>
                 </li>
                 <li className={style.list}>
-                  <Link href="/blogs" className={style.menuLink}>Bloq</Link>
+                  <Link href="/blogs" className={style.menuLink}>
+                    Bloq
+                  </Link>
                 </li>
                 <li className={style.list}>
-                  <Link href="/contact" className={style.menuLink}>Əlaqə</Link>
+                  <Link href="/contact" className={style.menuLink}>
+                    Əlaqə
+                  </Link>
                 </li>
               </ul>
             </nav>
             <div className={style.icons}>
               <Search />
               <div className={`${style.bages} ${style.items}`}>
-                <Link href="/basket" className={`${style.iconLinks} ${style.bagesLink}`}>
+                <Link
+                  href="/basket"
+                  className={`${style.iconLinks} ${style.bagesLink}`}
+                >
                   <BagesIcon />
                 </Link>
               </div>
-              <button className={`${style.register} ${style.items}`} onClick={handleProfileClick}>
+              <button
+                className={`${style.register} ${style.items}`}
+                onClick={handleProfileClick}
+              >
                 <div className={`${style.iconLinks} ${style.registerLink}`}>
                   <ProfileIcon />
                 </div>
               </button>
               <div className={`${style.lang} ${style.items}`}>
-                <Link href="#" className={`${style.iconLinks} ${style.langLink}`}>
+                <Link
+                  href="#"
+                  className={`${style.iconLinks} ${style.langLink}`}
+                >
                   <LangIcon />
                   AZ
                 </Link>
@@ -100,4 +123,3 @@ const Header = () => {
 };
 
 export default Header;
-

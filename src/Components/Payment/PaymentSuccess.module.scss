@@ -1,0 +1,76 @@
+.modal {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px 65px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .header {
+  
+    h2 {
+      max-width: 500px;
+      color: #226D64;
+      font-size: 40px;
+      padding: 0 40px;
+      font-weight: 600px;
+      margin: 30px 0;
+    }
+  
+    .reservationNumber {
+      color: #474A56;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+  
+  .details {
+    text-align: left;
+    margin: 50px 0;
+  
+    h3 {
+      color: #474A56;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    hr{
+      border: 1px solid #dddede;
+    }
+  
+    .detailRow {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      gap: 10px;
+  
+      span {
+        color: #8A8A8A;
+        font-size: 24px;
+  
+        &:last-child {
+          color: #474A56;
+        }
+      }
+  
+      strong {
+        color: #C8D1E1;
+      }
+    }
+  }
+  
+  .paymentIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .primaryButton {
+    width: max-content;
+    padding: 12px 24px;
+    margin: 24px auto 0;
+  }
+  

@@ -1,0 +1,93 @@
+.search {
+    border-radius: 15px;
+    background: #FFF;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 6px 6px 35px 0px rgba(16, 40, 81, 0.11);
+    height: 104px;
+    padding: 27px 24px;
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    font-family: Poppins;
+
+    .drop_down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        color: #ABB6C7;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 140px;
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid #F0F0F0;
+        background: #FAFBFE;
+        cursor: pointer;
+
+        &>span {
+            padding: 0 2px;
+        }
+
+
+    }
+
+    .input_col {
+
+        width: 100%;
+
+        .container_search_input {
+            width: 100%;
+            position: relative;
+
+            .input_icon {
+
+                position: absolute;
+                top: 50%;
+                left: 20px; // Adjust padding as needed
+                transform: translateY(-50%);
+                pointer-events: none;
+                height: min-content;
+                display: inline-block;
+                color: #9CA3AF;
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                border-radius: 8px;
+                border: 1px solid #F0F0F0;
+                background: #FAFBFE;
+                height: 50px;
+                display: block;
+                padding-left: 65px;
+                font-size: 14px;
+                color: #ABB6C7;
+
+                &::placeholder {
+                    font-size: 14px;
+                    color: #ABB6C7;
+                }
+            }
+        }
+    }
+
+    .form_submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        border-radius: 17px;
+        background: #226D64;
+        height: 50px;
+        padding: 12px 52px;
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}

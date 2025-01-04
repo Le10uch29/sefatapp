@@ -1,0 +1,20 @@
+.ourDoctors {
+    padding-top: 50px;
+    position: relative;
+
+    .ground_line {
+        position: absolute;
+        width: 100vw;
+        max-width: 1800px;
+        max-height: 1500px;
+        z-index: -1;
+        top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

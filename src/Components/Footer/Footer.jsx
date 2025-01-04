@@ -40,10 +40,10 @@ const Footer = () => {
                   <Link href="#">Dərmanlar</Link>
                 </li>
                 <li>
-                  <Link href="/">Klinakalar</Link>
+                  <Link href="/clinics">Klinakalar</Link>
                 </li>
                 <li>
-                  <Link href="#">Haqqımızda</Link>
+                  <Link href="/About">Haqqımızda</Link>
                 </li>
               </ul>
             </div>

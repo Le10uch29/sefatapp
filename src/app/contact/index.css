@@ -1,0 +1,101 @@
+.contactContainer img {
+  width: 27px;
+  height: 27px;
+}
+.contactContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  padding-top: 44px;
+  padding-bottom: 87px;
+}
+.contactContainer h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: rgba(34, 109, 100, 1);
+}
+.contactContainer .contactForm {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainer .contactForm .left {
+  max-width: 564px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 44px;
+  margin-bottom: 100px;
+}
+.contactContainer .contactForm .left h3 {
+  width: 60%;
+  font-size: 40px;
+  /* font-weight: 500; */
+  color: rgba(0, 0, 0, 1);
+}
+.contactContainer .contactForm .left p {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contactContainer .contactForm .left .adresses {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contactContainer .contactForm .left .adresses .adressItem {
+  display: flex;
+  gap: 17px;
+}
+.contactContainer .contactForm .left .adresses .adressItem p a {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+/* RIGHT */
+.contactContainer .contactForm .right {
+  max-width: 405px;
+}
+
+.contactContainer .contactForm .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.contactContainer .contactForm .right form input {
+  width: 405px;
+  height: 55px;
+  border-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 14px 19px;
+  color: rgba(151, 151, 151, 1);
+  font-size: 18px;
+  font-weight: 400;
+}
+.contactContainer .contactForm .right form textarea {
+  width: 405px;
+  height: 159px;
+  border-color: rgba(217, 217, 217, 1);
+  color: rgba(151, 151, 151, 1);
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 14px 19px;
+}
+.contactContainer .contactForm .right form input:focus {
+  border-color: rgba(34, 109, 100, 1);
+}
+.contactContainer .contactForm .right form button {
+  width: 100%;
+  background-color: rgba(34, 109, 100, 1);
+  border-radius: 5px;
+  height: 45px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 400;
+}

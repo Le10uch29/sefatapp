@@ -1,0 +1,28 @@
+.ourClinics {
+    padding: 50px 16px 0;
+    position: relative;
+
+    .ground_line {
+        position: absolute;
+        width: 100vw;
+        max-width: 1800px;
+        max-height: 1500px;
+        z-index: -1;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 82px;
+    }
+}

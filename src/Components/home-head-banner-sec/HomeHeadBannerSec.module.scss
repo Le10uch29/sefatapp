@@ -1,0 +1,125 @@
+.section {
+    position: relative;
+
+    .banner_img {
+        position: absolute;
+        width: 100%;
+        height: 631px;
+        z-index: -1;
+    }
+
+    .container {
+        height: 631px;
+        padding-top: 329px;
+
+        .search_container {
+            position: relative;
+
+            .search_icon {
+                top: 50%;
+                left: 30px;
+                transform: translateY(-50%);
+                position: absolute;
+                font-size: 34px;
+                color: #fff;
+            }
+
+            .inp {
+                border: solid 4px #fff;
+                border-radius: 78px;
+                padding: 18px 30px 18px 74px;
+                width: 638px;
+                background-color: transparent;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 36px;
+                color: #fff;
+                transition: border .3s;
+
+                &:focus {
+                    border-color: #1b5750;
+                }
+
+                &::placeholder {
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 36px;
+                    color: #FFFFFFB5;
+                }
+            }
+        }
+
+
+
+    }
+
+    .short_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translateY(-50%);
+        gap: 44px;
+
+
+        .card {
+            width: 328px;
+            padding: 35px 40px;
+            background-color: #fff;
+            box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            transition: background-color .3s;
+            svg{
+                path{
+                    fill: #226D64;
+                }
+            }
+            .icon {
+                font-size: 40px;
+                color: #226d64;
+                transition: color .3s;
+            }
+
+            .title {
+                font-family: var(--poppins);
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0.10000000149011612px;
+                color: #252b42;
+                transition: color .3s;
+
+            }
+
+            .content {
+                font-family: var(--montserrat);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.20000000298023224px;
+                color: #737373;
+                transition: color .3s;
+            }
+
+            &:hover {
+                background-color: #226d64;
+
+                svg{
+                    path{
+                        fill: white;
+                    }
+                }
+
+                .title {
+                    color: #fff;
+                }
+
+                .content {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
