@@ -1,7 +1,6 @@
 .loginContainer {
   /* width: 100%;
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center; */
   position: fixed;
@@ -16,7 +15,13 @@
   align-items: center;
   z-index: 999;
 }
-.loginContainer .login, .login-main {
+
+.loginContainer img {
+  margin-bottom: 46px;
+}
+
+.loginContainer .login,
+.login-main {
   width: 481px;
   background-color: rgba(216, 216, 216, 0.7);
   border-radius: 20px;
@@ -75,7 +80,8 @@
   font-size: 19.45px;
   font-weight: 400;
 }
-.loginContainer .login-main .forgotPass {
+.loginContainer .login-main {
+  padding: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -85,6 +91,17 @@
   color: rgba(0, 0, 0, 1);
   margin-bottom: 45px;
 }
+
+.forgotPass {
+  width: 100%;
+  justify-content: center;
+  font-size: 15.56px;
+  font-weight: 400;
+  font-family: Work Sans;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 45px;
+}
+
 .loginContainer .login-main .loginButton {
   width: 100%;
   height: 68.06px;
@@ -124,7 +141,7 @@
   .loginContainer {
     justify-content: center;
   }
-  .loginContainer .login-main{
+  .loginContainer .login-main {
     padding: 30px 51px 0px;
   }
   .loginContainer .login-main .top .loginWith {
@@ -155,7 +172,6 @@
   .loginContainer .login-main .fowardReg {
     font-size: 16px;
     margin-top: 20px;
-    
   }
   .loginContainer .login-main .forgotPass {
     margin-bottom: 0px;
